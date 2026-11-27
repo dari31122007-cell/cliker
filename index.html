@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎀 Розовый Кликер 🎀</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>🎀 Супер Кликер 🎀</h1>
+        <p class="instruction">Нажимай на сердечко, копи очаровательные очки и покупай улучшения!</p>
+        
+        <div class="score-display">✨ Очки: <span id="score">0</span> ✨</div>
+        
+        <button id="click-btn" class="main-btn">💖 Кликнуть! 💖</button>
+        
+        <div class="stats">
+            <div>Всего кликов: <strong id="total-clicks">0</strong></div>
+            <div>Сила клика: <strong id="click-power">1</strong></div>
+            <div>Очков в сек: <strong id="auto-power">0</strong></div>
+        </div>
+
+        <button id="upgrade-btn" class="upgrade-btn" disabled>
+            🌸 Улучшение (+1 к клику) <br>
+            <small>Стоимость: <span id="upgrade-cost">10</span> очков</small>
+        </button>
+
+        <button id="auto-upgrade-btn" class="upgrade-btn auto-btn" disabled>
+            🦄 Авто-кликер (+1 очко/сек) <br>
+            <small>Стоимость: <span id="auto-upgrade-cost">50</span> очков</small>
+        </button>
+
+        <div id="achievement-msg" class="achievement hidden">
+            🎉 Ты в деле! Достигнуто 50 очков! Ты настоящая звезда! 🎉
+        </div>
+        
+        <button id="reset-btn" class="reset-btn">Сбросить прогресс</button>
+    </div>
+    
+</body>
+</html>

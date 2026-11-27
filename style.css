@@ -1,0 +1,147 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #fff0f5; 
+    color: #880e4f; 
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-container {
+    max-width: 500px;
+    width: 100%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 25px;
+    border: 3px solid #ffb6c1;
+    box-shadow: 0 8px 25px rgba(255, 105, 180, 0.2); 
+}
+
+h1 {
+    color: #d81b60;
+    margin-bottom: 5px;
+}
+
+.instruction {
+    color: #ad1457;
+    font-size: 0.95em;
+    margin-bottom: 25px;
+}
+
+.score-display {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #e91e63;
+    margin: 20px 0;
+    background-color: #fce4ec;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.main-btn {
+    background: linear-gradient(135deg, #ff4081, #f50057);
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.2s;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(245, 0, 87, 0.3);
+}
+
+.main-btn:active {
+    transform: scale(0.95);
+}
+
+.main-btn:hover {
+    box-shadow: 0 6px 20px rgba(245, 0, 87, 0.5);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff5f8;
+    border-radius: 15px;
+    border: 1px dashed #f48fb1;
+    font-size: 0.95em;
+    color: #c2185b;
+}
+
+.upgrade-btn {
+    background-color: #f8bbd0;
+    color: #880e4f;
+    border: 2px solid #f48fb1;
+    padding: 15px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.upgrade-btn:hover:not(:disabled) {
+    background-color: #f06292;
+    color: white;
+    border-color: #ec407a;
+}
+
+.auto-btn:hover:not(:disabled) {
+    background-color: #ce93d8; 
+    border-color: #ba68c8;
+}
+
+.upgrade-btn:disabled {
+    background-color: #fce4ec;
+    color: #f48fb1;
+    border-color: #f8bbd0;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.achievement {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #ff80ab;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid #ff4081;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.hidden {
+    display: none;
+}
+
+.reset-btn {
+    margin-top: 20px;
+    background: none;
+    border: 1px solid #f48fb1;
+    color: #f48fb1;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: all 0.2s;
+}
+
+.reset-btn:hover {
+    background-color: #f48fb1;
+    color: white;
+}
